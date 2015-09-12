@@ -9110,39 +9110,3 @@ return jQuery;
 }));
 
 
-//////////// content script begins here ////////////////
-
-function wtf(){
-alert('You wont look smarter.   -Joe the annoying friend');
-}
-var theButton1 = document.getElementById('u_0_1f');
-theButton1.addEventListener('click',wtf);
-
-
-
-
-function nis(){
-alert('Nothing is special.   -Joe the annoying friend');
-}
-var theButton2 = document.getElementById('pageHead');
-theButton2.addEventListener('click', nis);
-
-
-function randAlert() { 
-var randtext = new Array (); 
-randtext[0] = "This is not real life, not real, not real, not real"; 
-randtext[1] = "Nobody is special"; 
-randtext[2] = "πø∆ˆ˙¶•∞®∞∞∞§§§§£™ß∂Ω≈Ω¡∑´†≈≈ç"; 
-var i = Math.floor(3*Math.random()) 
-
-alert(randtext[i]+'  '+'-Joe the annoying friend'); 
-} 
-
-var theButton3 = document.getElementById('u_ps_0_0_0');
-theButton3.addEventListener('click', randAlert);
-
-
-addButton("Set an alarm", function() {
-  chrome.runtime.sendMessage({setAlarm: true});
-});
-

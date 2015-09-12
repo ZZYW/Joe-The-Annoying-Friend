@@ -11,10 +11,14 @@
     "content_scripts": [
     {
       "matches": ["*://www.facebook.com/*"],
-      "js": ["contentscript.js"]
+	    "css": ["libs/sweetalert.css"],
+      "js": ["jquery.js","libs/sweetalert.min.js","content.js"]
     }
   ],
 
+	"web_accessible_resources" : [
+		"icon_big.png"
+	],
 
   "page_action" :
   {
